@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22260E1A1AD4DC5A00407E35 /* Operation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22260E181AD4DC5A00407E35 /* Operation.cpp */; };
+		22260E201AD4EFEE00407E35 /* OperationFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22260E1E1AD4EFEE00407E35 /* OperationFactory.cpp */; };
 		22FF90301AB95FF10060B214 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22FF902F1AB95FF10060B214 /* main.cpp */; };
+		22FF903B1AB966920060B214 /* OriginalOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22FF90391AB966920060B214 /* OriginalOperator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		22260E181AD4DC5A00407E35 /* Operation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Operation.cpp; sourceTree = "<group>"; };
+		22260E191AD4DC5A00407E35 /* Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operation.h; sourceTree = "<group>"; };
+		22260E1E1AD4EFEE00407E35 /* OperationFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OperationFactory.cpp; path = ../OperationFactory.cpp; sourceTree = "<group>"; };
+		22260E1F1AD4EFEE00407E35 /* OperationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OperationFactory.h; path = ../OperationFactory.h; sourceTree = "<group>"; };
 		22FF902C1AB95FF10060B214 /* DesignPatternLearner */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPatternLearner; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FF902F1AB95FF10060B214 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		22FF90391AB966920060B214 /* OriginalOperator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OriginalOperator.cpp; sourceTree = "<group>"; usesTabs = 0; };
+		22FF903A1AB966920060B214 /* OriginalOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalOperator.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +50,7 @@
 		22FF90231AB95FF10060B214 = {
 			isa = PBXGroup;
 			children = (
-				22FF902E1AB95FF10060B214 /* DesignPatternLearner */,
+				22FF902E1AB95FF10060B214 /* LearnDesignPattern */,
 				22FF902D1AB95FF10060B214 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,11 +63,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		22FF902E1AB95FF10060B214 /* DesignPatternLearner */ = {
+		22FF902E1AB95FF10060B214 /* LearnDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				22260E1F1AD4EFEE00407E35 /* OperationFactory.h */,
+				22260E1E1AD4EFEE00407E35 /* OperationFactory.cpp */,
 				22FF902F1AB95FF10060B214 /* main.cpp */,
+				22FF90391AB966920060B214 /* OriginalOperator.cpp */,
+				22FF903A1AB966920060B214 /* OriginalOperator.h */,
+				22260E191AD4DC5A00407E35 /* Operation.h */,
 			);
+			name = LearnDesignPattern;
 			path = DesignPatternLearner;
 			sourceTree = "<group>";
 		};
@@ -118,7 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22260E1A1AD4DC5A00407E35 /* Operation.cpp in Sources */,
 				22FF90301AB95FF10060B214 /* main.cpp in Sources */,
+				22260E201AD4EFEE00407E35 /* OperationFactory.cpp in Sources */,
+				22FF903B1AB966920060B214 /* OriginalOperator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +250,7 @@
 				22FF90351AB95FF10060B214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
